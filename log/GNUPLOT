@@ -1,0 +1,9 @@
+GNUPLOT
+
+You can plot these log files with gnuplot. To do so, change to this directoray, run gnuplot and type:
+
+  plot "IP_TO_PLOT.dat" using 1:2
+
+For more information about gnuplot have a look at:
+
+  http://www.gnuplot.info
