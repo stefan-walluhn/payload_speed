@@ -31,7 +31,7 @@ function packageCollector(package_src_ip, payload_size, now) {
     console.log("This implies a payload bitrate of: " + bitrate + "b/s") ;
 
     // Log to file
-    var stream = fs.createWriteStream("./logs/" + this.ip + ".dat", { 'flags': 'a' }) ;
+    var stream = fs.createWriteStream("./log/" + this.ip + ".dat", { 'flags': 'a' }) ;
     stream.once('open', function(fd) {
       stream.write(size + "\t" + bitrate + "\n") ;
       stream.end() ;
